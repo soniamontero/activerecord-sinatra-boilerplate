@@ -1,0 +1,13 @@
+<h1>My Restaurant App</h1>
+
+<h3>Here's the list:</h3>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      <a href="restaurants/<%= restaurant.id %>">
+        <%= restaurant.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>
